@@ -1,0 +1,1 @@
+"use strict";var e=require("react");exports.MyComponent=({text:t})=>e.createElement("div",{className:"my-component"},t),exports.useGuideHook=t=>{const[s,o]=e.useState(t);return{state:s,handleChange:e=>{o(e)}}};
