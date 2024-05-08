@@ -10,10 +10,17 @@
     "build": "rollup -c --bundleConfigAsCjs",
     "build:css": "postcss src/styles/styles.css -o dist/styles.css --use autoprefixer cssnano"
   },
-  "keywords": ["react","website","onboarding","tour","guide"],
+  "keywords": [
+    "react",
+    "website",
+    "onboarding",
+    "tour",
+    "guide"
+  ],
   "author": "Md Asif Momin",
   "license": "MIT",
   "dependencies": {
+    "driver.js": "^1.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
