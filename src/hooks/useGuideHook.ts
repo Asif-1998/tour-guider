@@ -16,14 +16,38 @@ import { driver } from "driver.js";
 import 'driver.js/dist/driver.css';
 import '../styles/styles.css';
 
-const useGuideHook = (steps: any) => {
-  const driverObj = driver({
-    showProgress: true,
-    animate: false,
-    steps: steps
-  });
+const useGuideHook = (theme: String, steps: any) => {
 
-  return driverObj.drive();
+  if (theme === "yellow") {
+
+    steps.forEach((step : any) => {
+      step.popover.popoverClass = 'driverjs-theme';
+    });
+
+    const yellowDriverObj = driver({
+      showProgress: true,
+      animate: false,
+      nextBtnText: '—›',
+      prevBtnText: '‹—',
+      doneBtnText: '✕',
+      steps: steps
+    });
+
+    return yellowDriverObj.drive();
+
+  } else {
+
+    const defaultDriverObj = driver({
+      showProgress: true,
+      animate: false,
+      steps: steps
+    });
+
+    return defaultDriverObj.drive();
+
+  }
+
+  //return driverObj.drive();
 };
 
 export default useGuideHook;

@@ -3,10 +3,11 @@
     padding: 10px;
     border-radius: 5px;
 } */
+
+
+/* yellow theme css start */
 .driver-popover.driverjs-theme {
     background-color: #fde047;
-    /* border: 2px solid lightcoral; */
-    /* max-width: 1000px; */
 }
 
 .driver-popover.driverjs-theme .driver-popover-title {
@@ -31,8 +32,6 @@
     font-weight: bold;
 }
 
-
-
 .driver-popover.driverjs-theme button:hover {
     color: #ffffff;
     background-color: transparent;
@@ -41,11 +40,6 @@
     cursor: pointer;
     overflow: hidden;
 }
-
-/* .driver-popover.driverjs-theme .driver-popover-navigation-btns {
-    justify-content: flex-end;
-    gap: 3px;
-} */
 
 .driver-popover.driverjs-theme .driver-popover-prev-btn {
     margin-left: 150px;
@@ -77,7 +71,4 @@
     border-width: 10px;
 }
 
-/* .driver-popover-footer {
-    border-top: 1px solid lightcoral;
-    padding-top: 10px;
-  } */
+/* yellow theme css end */
